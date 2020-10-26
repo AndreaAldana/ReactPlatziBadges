@@ -10,7 +10,7 @@
   .badge_header {
     padding: 0.25rem 0;
     height: 80px;
-    background: lightblue;
+    background: #1B1B25;
     display: flex;
     justify-content: center;
   }
