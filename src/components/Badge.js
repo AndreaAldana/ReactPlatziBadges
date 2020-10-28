@@ -15,8 +15,6 @@ class Badge extends React.Component {
 
         return <div className="badge">
             <div className="badge_header"><img src={logo2} alt="logo2" />
-                {/* <h2 style={{ marginTop: "12px", color: "white" }}>Proyecto React</h2> */}
-
             </div>
 
             <div className="badge_section-name">
