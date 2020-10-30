@@ -1,4 +1,6 @@
 import React from 'react';
+import './styles/BadgeForm.css'
+import { Button } from 'react-bootstrap'
 
 class BadgeForm extends React.Component {
     state = {
@@ -58,8 +60,8 @@ class BadgeForm extends React.Component {
 
     render() {
         console.log(this.props.verifyInputs.isFormValid)
-        return <div>
-            <h1 className="text-center">New Attendant</h1>
+        return <div className="card">
+            <h1 className="form_title">New Attendant</h1>
             {/* esto evitará que se envié el formulario, el on submit con el e.preventDefault */}
             <form onSubmit={this.handleSubmit}>
                 <div className="form-group">
@@ -113,8 +115,9 @@ class BadgeForm extends React.Component {
                         value={this.props.formValues.gitHub}>
                     </input>
                 </div>
-                <button /* type="button" */ disabled={this.props.verifyInputs.isFormValid} onClick={this.handleClick}
-                    className="btn btn-primary">Save</button>
+                <div style={{ textAlign: "center" }}>
+                    <Button className="form_button" disabled={this.props.verifyInputs.isFormValid} onClick={this.handleClick} variant="outline-info">Submit</Button>
+                </div>
             </form>
         </div>
     }

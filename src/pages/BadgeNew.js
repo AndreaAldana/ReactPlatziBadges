@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './styles/BadgeNew.css'
 import Badge from '../components/Badge.js'
 import BadgeForm from '../components/BadgeForm'
@@ -38,9 +39,6 @@ class BadgeNew extends React.Component {
     render() {
         return (
             <div>
-
-                <div className="BadgeNew__hero">
-                </div>
                 <div className="container">
                     <div className="row">
                         <div className="col-6">

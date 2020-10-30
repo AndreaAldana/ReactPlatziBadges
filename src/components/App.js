@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Badges from '../pages/Badges'
 import BadgeNew from '../pages/BadgeNew'
 import Layout from './Layout'
+import Home from '../pages/Home'
 
 
 //Esto se puede hacer cuando no haya ningún otro método
@@ -12,6 +13,7 @@ function App() {
         <Layout>
             <Route exact path="/badges" component={Badges} />
             <Route exact path="/badges/new" component={BadgeNew} />
+            <Route exact path="/Home" component={Home} />
         </Layout>
     </BrowserRouter>
 }
