@@ -1,18 +1,28 @@
+
 .badge {
     background: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     border-radius: 8px 8px 8px 8px;
     overflow: hidden;
-    height: 380px;
+    height: 500px;
     width: 100%;
+    
   }
   
   .badge_header {
     padding: 0.25rem 0;
-    height: 80px;
-    background: #1B1B25;
+    height: 130px;
+    background: #ffeaa0;
     display: flex;
     justify-content: center;
+  }
+  
+
+  .small_logo {
+    height: 5em;
+    display:flex;
+    margin-top: 2.5em;
+    margin-left:1em;
   }
   
   .badge_section-name {
@@ -28,7 +38,7 @@
     justify-content: center;
     align-items: center;
     padding: 0.5rem 0;
-    background: #f4f4f7;
+    background: #D2FDFF;
   }
   
   .badge_avatar {
@@ -43,7 +53,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #98ca3f;
+    color: #F4976C;
     font-weight: bold;
     font-style: italic;
   }

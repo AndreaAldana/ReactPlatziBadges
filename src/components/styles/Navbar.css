@@ -1,13 +1,15 @@
 .Navbar {
     width: 100%;
     padding: 0.5rem 0;
-    background-color: #1C3643;
+    color: #FBE8A6;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.23);
   }
   
   .Navbar__brand {
-    color: #ffffff;
     display: flex;
     align-items: center;
+    color:#FBE8A6;
+    padding-right:5em;
   }
   
   .Navbar__brand:hover {
@@ -16,5 +18,8 @@
   }
   
   .Navbar__brand-logo {
-    margin-right: 0.5rem;
+    margin-right: 1.5rem;
+    padding-left:  1em;
+    height: 4em;
+
   }

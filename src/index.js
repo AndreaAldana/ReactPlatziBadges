@@ -4,12 +4,12 @@
 // const container = document.getElementById('app');
 
 // container.appendChild(element);
-
 import React from 'react';
 import ReactDOM from 'react-dom';
-import BadgeNew from './pages/BadgeNew'
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './global.css'
+import 'sweetalert2/dist/sweetalert2.css'
+import App from './components/App';
 
 const element = <h1>Hello, Platzi Badges!</h1>;
 //el tipo, atributos(props), contenido
@@ -23,6 +23,6 @@ const container = document.getElementById('app');
 
 // ReactDOM.render(__qué__, __dónde__);
 ReactDOM.render(<
-    BadgeNew /*  firstName="Andrea"
+    App /*  firstName="Andrea"
     lastName="Aldana"
     jobTitle="Jr Developer" */ />, container);
