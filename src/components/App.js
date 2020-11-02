@@ -4,7 +4,7 @@ import Badges from '../pages/Badges'
 import BadgeNew from '../pages/BadgeNew'
 import Layout from './Layout'
 import Home from '../pages/Home'
-
+import AboutUs from '../pages/AboutUs'
 
 //Esto se puede hacer cuando no haya ningún otro método
 //y que no se esté usando estado
@@ -15,6 +15,7 @@ function App() {
             <Route exact path="/badges" component={Badges} />
             <Route exact path="/badges/new" component={BadgeNew} />
             <Route exact path="/Home" component={Home} />
+            <Route exact path="/AboutUs" component={AboutUs} />
         </Layout>
     </BrowserRouter>
 

@@ -1,0 +1,12 @@
+.container{
+    height: 45pc;
+    margin:auto;
+    display:flex;
+    text-align: center;
+}
+
+#cards{
+    margin:auto;
+    display:flex;
+    padding: 2em;
+}
