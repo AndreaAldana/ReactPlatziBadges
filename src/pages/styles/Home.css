@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;700&display=swap');
+
+#container_home {
+    height: 50pc; 
+}
+
+#col_home{ 
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.pic_home{
+    height: 50pc;
+    
+}
+
+ .text_home{
+    display:flex;
+    font-family: 'Advent Pro', sans-serif;
+    padding-left: 5em;
+    font-size: 4vw;
+} 
+
+.text_home:hover{
+color: darkblue;
+}
+ 
+.button_home {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+    font-size: 3em;
+  } 

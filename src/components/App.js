@@ -9,6 +9,7 @@ import Home from '../pages/Home'
 //Esto se puede hacer cuando no haya ningún otro método
 //y que no se esté usando estado
 function App() {
+
     return <BrowserRouter>
         <Layout>
             <Route exact path="/badges" component={Badges} />
@@ -16,6 +17,7 @@ function App() {
             <Route exact path="/Home" component={Home} />
         </Layout>
     </BrowserRouter>
+
 }
 
 export default App;

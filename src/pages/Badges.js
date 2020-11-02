@@ -7,33 +7,33 @@ class Badges extends React.Component {
     state = {
         data: [{
             id: "2de30c42-9deb-40fc-a41f-05e62b5939a7",
-            firstName: "Typhlosion",
-            lastName: "",
-            email: "Typhlosion@gmail.com",
-            jobTitle: "Pokémon tipo Fuego",
-            gitHub: "Segunda generación",
+            firstName: "Anubis",
+            lastName: "Ali",
+            email: "anubis_ali@gmail.com",
+            jobTitle: "Senior backend developer",
+            gitHub: "Thracium",
             avatarUrl:
-                "https://24.media.tumblr.com/tumblr_m2x5nxDthL1qgd7tso3_250.gif"
+                "https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png"
         },
         {
             id: "d00d3614-101a-44ca-b6c2-0be075aeed3d",
-            firstName: "Lucario",
-            lastName: "",
-            email: "Lucario@hotmail.com",
-            jobTitle: "Pokémon tipo Acero y Lucha",
-            gitHub: "Cuarta generación",
+            firstName: "Paloma",
+            lastName: "Herrera",
+            email: "pherrera@hotmail.com",
+            jobTitle: "Ui/ux designer",
+            gitHub: "PalomaHerrera",
             avatarUrl:
-                "https://pa1.narvii.com/5796/60fd631be2ffd626367e09a06c099a2c58616eed_00.gif"
+                "https://clevelandschoolsbookfund.org/wp-content/uploads/2019/01/icon-profile-female.png"
         },
         {
             id: "63c03386-33a2-4512-9ac1-354ad7bec5e9",
-            firstName: "Dragonite",
-            lastName: "",
-            email: "dragonite@hotmail.com",
-            jobTitle: "Pokémon tipo Dragón",
-            gitHub: "Primera generación",
+            firstName: "Catalina",
+            lastName: "Contreras",
+            email: "cata94_@hotmail.com",
+            jobTitle: "QA Analyst",
+            gitHub: "CataDesigns",
             avatarUrl:
-                "https://thumbs.gfycat.com/SlushyEllipticalFlyinglemur-small.gif"
+                "https://www.clementjuniorpreschool.com/wp-content/uploads/2019/04/219969.png"
         }
 
         ]

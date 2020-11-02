@@ -7,12 +7,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body {padding:0; margin:0; height:100%;}
 
-body {
+html,body {
   font-family: 'Lato', 'Helvetica Neue', sans-serif;
   background-color: #F4F4F7;
   background-image: url("https://shorelinehandwerks.com/wp-content/uploads/2018/09/z_13823_0_0.jpg");
+  padding:0; margin:0; height:100%;
 }
 
 h1 {

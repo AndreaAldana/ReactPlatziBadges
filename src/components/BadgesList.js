@@ -14,18 +14,18 @@ class BadgesList extends React.Component {
                             <div className="Badges__letters">
 
                                 <div>
-                                    <span className="poke__icon"></span>
+                                    <div className="user__icon"></div>
                                     <strong>{badge.firstName} {badge.lastName}</strong>
                                 </div>
                                 <br />
                                 <div>
-                                    <span className="small__icon"></span>
+                                    <div className="git__icon"></div>
                                     <span>{badge.gitHub}</span>
 
                                 </div>
                                 <br />
                                 <div>
-                                    <span className="poke2__icon"></span>
+                                    <div className="job__icon"></div>
                                     <span>{badge.jobTitle}</span>
 
                                 </div>
