@@ -10,7 +10,7 @@ class Navbarr extends React.Component {
     render() {
         return <Navbar className="Navbar" style={{ background: "#303C6C" }} expand="lg">
             <img className="Navbar__brand-logo" src={logo2} alt="Logo" />
-            <Navbar.Brand style={{ color: "#FBE8A6" }} className="Navbar__brand" href="/home">TechTalk.</Navbar.Brand>
+            <Link style={{ color: "#FBE8A6" }} className="Navbar__brand" to="/home">TechTalk.</Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">

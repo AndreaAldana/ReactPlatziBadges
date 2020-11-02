@@ -8,7 +8,7 @@ import updated from '../images/updated.svg'
 class AboutUs extends React.Component {
     render() {
         return <div>
-            <div className="container">
+            <div className="container_cards">
                 <div className="row" id="cards">
                     <div className="col-4">
                         <Card style={{ width: '18rem' }}>

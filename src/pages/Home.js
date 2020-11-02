@@ -16,7 +16,7 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <div className="button_home">
-                    <Link to="/badges/new" style={{ margin: "auto" }} className="btn btn-primary">New Badge</Link>
+                    <Link to="/badges/new" style={{ margin: "auto" }} className="btn btn-primary">Join and enjoy</Link>
                 </div>
             </div>
         </div>
