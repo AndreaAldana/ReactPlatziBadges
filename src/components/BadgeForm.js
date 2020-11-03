@@ -62,7 +62,7 @@ class BadgeForm extends React.Component {
 
 
         return <div className="card">
-            <h1 className="form_title">New Attendant</h1>
+
             {/* esto evitará que se envié el formulario, el on submit con el e.preventDefault */}
             <form onSubmit={this.props.onSubmit}>
                 <div className="form-group">

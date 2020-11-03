@@ -22,6 +22,8 @@ class BadgesList extends React.Component {
                 return (
                     //Esto es para que las reconozca por id y tengan su key
                     <div className="whole-element">
+
+
                         <li key={badge.id} className="Badge__card">
                             <Gravatar email={badge.email} alt="" className="BadgesListItem__avatar" />
                             <div className="Badges__letters">
@@ -41,6 +43,13 @@ class BadgesList extends React.Component {
                                     <div className="job__icon"></div>
                                     <span>{badge.jobTitle}</span>
 
+                                </div>
+                                <div style={{ paddingTop: "2em" }}>
+                                    <Link
+                                        className="btn btn-primary mr-1"
+                                        to={`/badges/${badge.id}/edit`}>
+                                        Edit
+                        </Link>
                                 </div>
                             </div>
                         </li>

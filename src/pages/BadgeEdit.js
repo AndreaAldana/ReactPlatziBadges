@@ -1,15 +1,14 @@
 import React from 'react';
 
-import './styles/BadgeNew.css'
 import Badge from '../components/Badge.js'
 import BadgeForm from '../components/BadgeForm'
 import api from '../api'
 import Loader from '../pages/Loader'
 
 
-class BadgeNew extends React.Component {
+class BadgeEdit extends React.Component {
     state = {
-        loading: false,
+        loading: true,
         error: null,
         form: {
             firstName: '',
@@ -20,6 +19,25 @@ class BadgeNew extends React.Component {
             twitter: '',
         },
     };
+
+
+    componentDidMount() {
+        this.fetchData();
+    }
+
+    fetchData = async e => {
+        this.setState({ loading: true, error: null })
+
+        try {
+            const data = await api.badges.read(
+                this.props.match.params.badgeId
+            )
+
+            this.setState({ loading: false, form: data })
+        } catch (error) {
+            this.setState({ loading: false, error: error })
+        }
+    }
 
     handleChange = e => {
         this.setState({
@@ -40,7 +58,7 @@ class BadgeNew extends React.Component {
         })
 
         try {
-            await api.badges.create(this.state.form)
+            await api.badges.update(this.props.match.params.badgeId, this.state.form)
             this.setState({
                 loading: false
             });
@@ -66,15 +84,15 @@ class BadgeNew extends React.Component {
                     <div className="row">
                         <div className="col-6">
 
-                            <Badge firstName={this.state.form.firstName || 'FIRST_NAME'}
-                                lastName={this.state.form.lastName || 'LAST_NAME'}
-                                jobTitle={this.state.form.jobTitle || 'JOB_TITLE'}
-                                twitter={this.state.form.twitter || 'YOUR_GITHUB'}
-                                email={this.state.form.email || 'YOUR_EMAIL'}
+                            <Badge firstName={this.state.form.firstName}
+                                lastName={this.state.form.lastName}
+                                jobTitle={this.state.form.jobTitle}
+                                twitter={this.state.form.twitter}
+                                email={this.state.form.email}
                                 avatarURL='https://s.gravatar.com/avatar/b9d44d1ba6103026edf7116ac42fc0e3?s=80' />
                         </div>
                         <div className="col-6">
-                            <h1 className="form_title">New Attendant</h1>
+                            <h1 className="form_title">Edit Attendant</h1>
                             <BadgeForm
                                 onChange={this.handleChange}
                                 onSubmit={this.handleSubmit}
@@ -90,4 +108,4 @@ class BadgeNew extends React.Component {
     }
 }
 
-export default BadgeNew;
+export default BadgeEdit;
