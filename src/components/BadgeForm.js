@@ -59,11 +59,11 @@ class BadgeForm extends React.Component {
 
 
     render() {
-        console.log(this.props.verifyInputs.isFormValid)
+
         return <div className="card">
             <h1 className="form_title">New Attendant</h1>
             {/* esto evitará que se envié el formulario, el on submit con el e.preventDefault */}
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.props.onSubmit}>
                 <div className="form-group">
                     <label>First Name</label>
                     <input onChange={this.props.onChange}
@@ -116,7 +116,7 @@ class BadgeForm extends React.Component {
                     </input>
                 </div>
                 <div style={{ textAlign: "center" }}>
-                    <Button className="form_button" disabled={this.props.verifyInputs.isFormValid} onClick={this.handleClick} variant="outline-info">Submit</Button>
+                    <Button type="submit" className="form_button" onClick={this.handleClick} variant="outline-info">Submit</Button>
                 </div>
             </form>
         </div>

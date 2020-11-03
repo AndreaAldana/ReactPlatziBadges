@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles/BadgeList.css'
 import { Link } from 'react-router-dom'
+import Gravatar from "./Gravatar";
 
 class BadgesList extends React.Component {
     render() {
@@ -20,7 +21,7 @@ class BadgesList extends React.Component {
                     //Esto es para que las reconozca por id y tengan su key
                     <div className="whole-element">
                         <li key={badge.id} className="Badge__card">
-                            <img src={badge.avatarUrl} alt="" className="BadgesListItem__avatar" />
+                            <Gravatar email={badge.email} alt="" className="BadgesListItem__avatar" />
                             <div className="Badges__letters">
 
                                 <div>

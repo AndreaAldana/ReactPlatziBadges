@@ -4,7 +4,7 @@ import React from 'react'
 class Spinner extends React.Component {
     render() {
         return <div>
-            <div class="lds-heart">
+            <div className="lds-heart">
                 <div></div>
             </div>
         </div>
