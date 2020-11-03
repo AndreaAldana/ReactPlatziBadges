@@ -16,7 +16,7 @@ class BadgeForm extends React.Component {
          lastName: '',
          email: '',
          jobTitle: '',
-         gitHub: ''
+         twitter: ''
      }; */
     /* también se puede inicializar el valor directamente un state
     en este caso el input firstName inicia con el valor Andrea */
@@ -45,7 +45,7 @@ class BadgeForm extends React.Component {
 
 
         if ((this.props.formValues.firstName === '' || this.props.formValues.lastName === '' || this.props.formValues.jobTitle === ''
-            || this.props.formValues.gitHub === '' || this.props.formValues.email === '')) {
+            || this.props.formValues.twitter === '' || this.props.formValues.email === '')) {
             this.setState({
                 isFormValid: true
             })
@@ -60,6 +60,7 @@ class BadgeForm extends React.Component {
 
     render() {
 
+
         return <div className="card">
             <h1 className="form_title">New Attendant</h1>
             {/* esto evitará que se envié el formulario, el on submit con el e.preventDefault */}
@@ -71,6 +72,7 @@ class BadgeForm extends React.Component {
                         type="text"
                         name="firstName"
                         placeholder="Ingrese su nombre"
+                        required
                         value={this.props.formValues.firstName}>
                     </input>
                 </div>
@@ -81,6 +83,7 @@ class BadgeForm extends React.Component {
                         type="text"
                         name="lastName"
                         placeholder="Ingrese su apellido"
+                        required
                         value={this.props.formValues.lastName}>
                     </input>
                 </div>
@@ -91,6 +94,7 @@ class BadgeForm extends React.Component {
                         type="email"
                         name="email"
                         placeholder="Ingrese su email"
+                        required
                         value={this.props.formValues.email}>
                     </input>
                 </div>
@@ -101,23 +105,29 @@ class BadgeForm extends React.Component {
                         type="text"
                         name="jobTitle"
                         placeholder="Ingrese su profesión"
+                        required
                         value={this.props.formValues.jobTitle}>
                     </input>
                 </div>
                 <div className="form-group">
-                    <label>GitHub</label>
+                    <label>Github</label>
                     <input onChange={this.props.onChange}
                         className="form-control"
                         type="text"
-                        name="gitHub"
-                        placeholder="Ingrese su usuario de gitHub"
+                        name="twitter"
+                        placeholder="Ingrese su usuario de twitter"
                         required
-                        value={this.props.formValues.gitHub}>
+                        value={this.props.formValues.twitter}>
                     </input>
                 </div>
                 <div style={{ textAlign: "center" }}>
                     <Button type="submit" className="form_button" onClick={this.handleClick} variant="outline-info">Submit</Button>
                 </div>
+
+                {this.props.error && (
+                    <p className="text-danger">{this.props.error.message}</p>
+                )}
+
             </form>
         </div>
     }

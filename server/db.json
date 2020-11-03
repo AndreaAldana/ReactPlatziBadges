@@ -449,6 +449,33 @@
       "jobTitle": "Dev",
       "gitHub": "AndreaAldana",
       "id": "2J6bOgG"
+    },
+    {
+      "firstName": "Arthuro Ali",
+      "lastName": "Gomez",
+      "email": "arthuroali@gmail.com",
+      "avatarUrl": "",
+      "jobTitle": "Dev Junior",
+      "twitter": "Emocrat3",
+      "id": "AUl-Qpo"
+    },
+    {
+      "firstName": "Sonia",
+      "lastName": "Paz",
+      "email": "soniap@gmail.com",
+      "avatarUrl": "",
+      "jobTitle": "Engineer",
+      "twitter": "SoniaP",
+      "id": "3ibfWtY"
+    },
+    {
+      "firstName": "Snoopy",
+      "lastName": "Kaf",
+      "email": "admin@gmail.com",
+      "avatarUrl": "",
+      "jobTitle": "Artist",
+      "twitter": "Snoop",
+      "id": "MJSzavW"
     }
   ]
 }

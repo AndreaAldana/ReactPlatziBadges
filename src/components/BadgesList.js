@@ -13,10 +13,12 @@ class BadgesList extends React.Component {
                 </div>
             </div>
         }
-
+        const badgesList = [...this.props.badges].reverse();
         return <ul className="list-unstyled" >
             {/*   se recorre el arreglo */}
-            {this.props.badges.map((badge) => {
+
+            {badgesList.map((badge) => {
+
                 return (
                     //Esto es para que las reconozca por id y tengan su key
                     <div className="whole-element">

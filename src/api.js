@@ -30,10 +30,14 @@ const api = {
             }
         },
         create(badge) {
-            return callApi(`/badges`, {
-                method: 'POST',
-                body: JSON.stringify(badge),
-            });
+            try {
+                return callApi(`/badges`, {
+                    method: 'POST',
+                    body: JSON.stringify(badge),
+                });
+            } catch (error) {
+                return '500: Server Error'
+            }
         },
         read(badgeId) {
             return callApi(`/badges/${badgeId}`);

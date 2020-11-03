@@ -11,7 +11,7 @@ class Badge extends React.Component {
 
         //props, son los atributos que tienen los elementos
 
-        const { firstName, lastName, jobTitle, gitHub } = this.props;
+        const { firstName, lastName, jobTitle, twitter } = this.props;
 
         return <div className="badge">
             <div className="badge_header">
@@ -26,7 +26,7 @@ class Badge extends React.Component {
 
             <div className="badge_section-info">
                 <h3>{jobTitle}</h3>
-                <div>GitHub: <a href="https://github.com/AndreaAldana"> {gitHub}</a>
+                <div>GitHub: <a href="https://github.com/AndreaAldana"> {twitter}</a>
                 </div>
             </div>
 
