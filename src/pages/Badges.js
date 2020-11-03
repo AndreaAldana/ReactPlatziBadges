@@ -2,61 +2,52 @@ import React from 'react'
 import BadgesList from '../components/BadgesList'
 import './styles/Badges.css'
 import { Link } from 'react-router-dom'
+import Loader from '../pages/Loader'
+import api from '../api'
+import PageError from '../components/PageError'
 
 class Badges extends React.Component {
 
 
-    constructor(props) {
-        super(props);
-        console.log('1, constructor');
-        this.state = {
-            data: []
-        };
-    }
+
+    state = {
+        loading: true,
+        error: null,
+        data: undefined
+    };
 
     componentDidMount() {
-        console.log('3, componentDidMount()')
-
-        setTimeout(() => {
-            this.setState({
-                data: [{
-                    id: "2de30c42-9deb-40fc-a41f-05e62b5939a7",
-                    firstName: "Anubis",
-                    lastName: "Ali",
-                    email: "anubis_ali@gmail.com",
-                    jobTitle: "Senior backend developer",
-                    gitHub: "Thracium",
-                    avatarUrl:
-                        "https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png"
-                },
-                {
-                    id: "d00d3614-101a-44ca-b6c2-0be075aeed3d",
-                    firstName: "Paloma",
-                    lastName: "Herrera",
-                    email: "pherrera@hotmail.com",
-                    jobTitle: "Ui/ux designer",
-                    gitHub: "PalomaHerrera",
-                    avatarUrl:
-                        "https://clevelandschoolsbookfund.org/wp-content/uploads/2019/01/icon-profile-female.png"
-                },
-                {
-                    id: "63c03386-33a2-4512-9ac1-354ad7bec5e9",
-                    firstName: "Catalina",
-                    lastName: "Contreras",
-                    email: "cata94_@hotmail.com",
-                    jobTitle: "QA Analyst",
-                    gitHub: "CataDesigns",
-                    avatarUrl:
-                        "https://www.clementjuniorpreschool.com/wp-content/uploads/2019/04/219969.png"
-                }
-
-                ]
-            })
-        }, 3000)
+        this.fetchData()
     }
 
+    fetchData = async () => {
+        this.setState({ loading: true, error: null })
+
+        //comenzar llamada a la api
+        try {
+            const data = await api.badges.list();
+            this.setState({ loading: false, data: data })
+
+        } catch (error) {
+            this.setState({ loading: false, error: error })
+        }
+    }
+
+
     render() {
-        console.log('2, render ')
+        //manejar el estado donde loading sea cierto
+        if (this.state.loading == true) {
+            return <div className="loader">
+                <Loader />
+            </div>
+        }
+
+        if (this.state.error) {
+            return <div>
+                <PageError error={this.state.error} />
+            </div>
+        }
+
         return <div>
             <div className="Badges__container">
                 <div className="Badges__buttons">

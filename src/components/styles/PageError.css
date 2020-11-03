@@ -1,0 +1,11 @@
+.PageError {
+    height: 50pc;
+}
+
+.img_error {
+    margin:auto;
+    align-items: center;
+    display: flex;
+    height: 40pc;
+
+}
