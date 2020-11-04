@@ -9,6 +9,8 @@ import { Modal, Button } from 'react-bootstrap'
 
 class BadgeDetailsContainer extends React.Component {
 
+
+
     state = {
         loading: true,
         error: null,
@@ -57,7 +59,7 @@ class BadgeDetailsContainer extends React.Component {
     }
 
     modalOpen = () => {
-        console.log("entrooooooooo")
+
         return <Modal show={this.state.show} onHide={this.toggleModalClose}>
             <Modal.Header closeButton style={{ textAlign: "center" }}>
                 <div style={{ textAlign: "center" }}>
@@ -77,9 +79,9 @@ class BadgeDetailsContainer extends React.Component {
 
     }
 
-    render() {
 
-        const count = 3;
+
+    render() {
 
 
         const badge = this.state.data
@@ -123,13 +125,6 @@ class BadgeDetailsContainer extends React.Component {
                                 <div>
                                     <button className="btn btn" style={{ backgroundColor: "#303C6C", color: "white" }} onClick={this.toggleModalOpen}>Delete Badge</button>
 
-                                </div>
-                                <div>
-                                    <button className="btn btn mt-4"
-                                        style={{ backgroundColor: "#F4976C", color: "white" }}
-                                        onClick={() => { }}>
-                                        increase count: {count}
-                                    </button>
                                 </div>
 
                             </div>
