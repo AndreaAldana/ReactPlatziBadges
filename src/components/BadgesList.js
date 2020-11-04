@@ -5,6 +5,7 @@ import Gravatar from "./Gravatar";
 
 function BadgesList(props) {
 
+
     const [query, setQuery] = React.useState('')
 
 
