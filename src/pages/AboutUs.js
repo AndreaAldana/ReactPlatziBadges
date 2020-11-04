@@ -27,7 +27,7 @@ class AboutUs extends React.Component {
                             <Card.Body>
                                 <Card.Title>Create connections</Card.Title>
                                 <Card.Text>
-                                    Meet colleagues with the same interests as you. Be in contact with famous people in TI.
+                                    Meet colleagues with the same interests as you. Be in contact with very relevant people in tech.
     </Card.Text>
                             </Card.Body>
                         </Card>
@@ -38,14 +38,15 @@ class AboutUs extends React.Component {
                             <Card.Body>
                                 <Card.Title>Always updated</Card.Title>
                                 <Card.Text>
-                                    Our conferences keep up with the latest advances in technology so you wont miss a thing about it.
-    </Card.Text>
+                                    Our conferences keep up with the latest advances in technology so you wont miss a thing about it. Keep up with us.
+                                    
+                                </Card.Text>
                             </Card.Body>
                         </Card>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     }
 }
 

@@ -442,15 +442,6 @@
       "id": "npaYZKI"
     },
     {
-      "firstName": "Andrea",
-      "lastName": "Aldana",
-      "email": "andrealdanapaz@gmail.com",
-      "avatarUrl": "",
-      "jobTitle": "Dev",
-      "gitHub": "AndreaAldana",
-      "id": "2J6bOgG"
-    },
-    {
       "firstName": "Arthuro Ali",
       "lastName": "Gomez",
       "email": "arthuroali@gmail.com",
@@ -467,15 +458,6 @@
       "jobTitle": "Engineer",
       "twitter": "SoniaP",
       "id": "3ibfWtY"
-    },
-    {
-      "firstName": "Snoopy",
-      "lastName": "Kaf",
-      "email": "admin@gmail.com",
-      "avatarUrl": "",
-      "jobTitle": "Best dog",
-      "twitter": "SnoopyDoggo",
-      "id": "MJSzavW"
     }
   ]
 }

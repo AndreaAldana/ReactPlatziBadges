@@ -51,7 +51,7 @@ class Badges extends React.Component {
         return <div>
             <div className="Badges__container">
                 <div className="Badges__buttons">
-                    <Link to="/badges/new" className="btn btn-primary">New Badge</Link>
+                    <Link className="btn btn" style={{ backgroundColor: "#F4976C", color: "white" }} to="/badges/new"> Create new badge</Link>
                 </div>
                 {/* lista de elementos */}
 

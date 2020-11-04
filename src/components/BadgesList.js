@@ -9,7 +9,8 @@ class BadgesList extends React.Component {
             return <div className="text-center" style={{ height: "20pc" }}>
                 <div>
                     <h3>No badges were found</h3>
-                    <Link className="btn btn-primary" to="/badges/new"> Create new badge</Link>
+                    <Link className="btn btn mb-4" style={{ backgroundColor: "#F4976C", color: "white" }} to="/badges/new"> Create new badge</Link>
+
                 </div>
             </div>
         }
@@ -46,7 +47,8 @@ class BadgesList extends React.Component {
                                 </div>
                                 <div style={{ paddingTop: "2em" }}>
                                     <Link
-                                        className="btn btn-primary mr-1"
+                                        className="btn btn mr-1"
+                                        style={{ backgroundColor: "#F4976C", color: "white" }}
                                         to={`/badges/${badge.id}`}>
                                         Details
                         </Link>
