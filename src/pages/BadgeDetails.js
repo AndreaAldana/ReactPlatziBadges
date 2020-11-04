@@ -1,10 +1,17 @@
-import React from 'react'
+/* import React from 'react'
 import Badge from '../components/Badge'
 import { Link } from 'react-router-dom'
 import './styles/BadgeDetails.css'
+import Modal from '../components/Modal'
+
+modalOpen = () => {
+    <h1>AAAAAAA</h1>
+}
 
 function BadgeDetails(props) {
     const badge = props.badge;
+
+
 
     return <div>
         <div className="text-center">
@@ -28,8 +35,13 @@ function BadgeDetails(props) {
                             <div>
                                 <div><Link className="btn btn-primary mb-4" to={`/badges/${badge.id}/edit`}>Editar</Link></div>
                             </div>
+
+
                             <div>
-                                <div><button className="btn btn-danger" to={`/badges/${badge.id}/edit`}>Delete Badge</button></div>
+                                <button className="btn btn-danger" to={`/badges/${badge.id}/edit`}>Delete Badge</button>
+                                {this.props.isAvailable &&
+                                    {modalOpen}
+                                }
                             </div>
                         </div>
                     </div>
@@ -40,4 +52,4 @@ function BadgeDetails(props) {
 
 }
 
-export default BadgeDetails;
+export default BadgeDetails; */
