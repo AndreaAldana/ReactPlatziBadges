@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;700&display=swap');
+
+#details_container {
+    height: 40pc;
+    margin: auto;
+    align-items: center;
+}
+
+.detailstext { 
+    display:flexbox;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 4vw;
+    margin-bottom: 1em;
+   
+}

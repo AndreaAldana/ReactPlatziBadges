@@ -7,6 +7,7 @@ import Home from '../pages/Home'
 import AboutUs from '../pages/AboutUs'
 import NotFound from '../pages/NotFound'
 import BadgeEdit from '../pages/BadgeEdit'
+import BadgeDetails from '../pages/BadgeDetailsContainer'
 
 //Esto se puede hacer cuando no haya ningún otro método
 //y que no se esté usando estado
@@ -26,6 +27,7 @@ function App() {
                  a ser un valor que si va a estar definido en la Url pero va a ser
                  genérico, puede ser el 1 el 2 el 3, eso no importa mucho. */
                 <Route exact path="/badges/:badgeId/edit" component={BadgeEdit} />
+                <Route exact path="/badges/:badgeId" component={BadgeDetails} />
                 <Route component={NotFound} />
             </Switch>
         </Layout>

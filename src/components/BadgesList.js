@@ -47,8 +47,8 @@ class BadgesList extends React.Component {
                                 <div style={{ paddingTop: "2em" }}>
                                     <Link
                                         className="btn btn-primary mr-1"
-                                        to={`/badges/${badge.id}/edit`}>
-                                        Edit
+                                        to={`/badges/${badge.id}`}>
+                                        Details
                         </Link>
                                 </div>
                             </div>
