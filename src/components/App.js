@@ -13,7 +13,7 @@ import BadgeDetails from '../pages/BadgeDetailsContainer'
 //y que no se esté usando estado
 function App() {
 
-    return <HashRouter basename="/React">
+    return <BrowserRouter>
         <Layout>
             <Switch>
                 <Route exact path="/badges" component={Badges} />
@@ -32,7 +32,7 @@ function App() {
             </Switch>
         </Layout>
 
-    </HashRouter>
+    </BrowserRouter>
 
 }
 

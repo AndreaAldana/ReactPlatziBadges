@@ -442,22 +442,40 @@
       "id": "AUl-Qpo"
     },
     {
-      "firstName": "Sonia",
+      "firstName": "Oswaldo",
+      "lastName": "Aldana",
+      "email": "oaap@gmail.com",
+      "avatarUrl": "",
+      "jobTitle": "Engineer",
+      "twitter": "Best dad",
+      "id": "PatuKMQ"
+    },
+    {
+      "firstName": "Carolina",
       "lastName": "Paz",
       "email": "soniap@gmail.com",
       "avatarUrl": "",
-      "jobTitle": "Engineer",
-      "twitter": "SoniaP",
-      "id": "3ibfWtY"
+      "jobTitle": "accountant",
+      "twitter": "Best mom",
+      "id": "YXxW2WX"
+    },
+    {
+      "firstName": "Oswaldo",
+      "lastName": "Jr",
+      "email": "thracium@gmail.com",
+      "avatarUrl": "",
+      "jobTitle": "Bad Lef4dead2 player",
+      "twitter": "ThraciumBro",
+      "id": "c0rY0jZ"
     },
     {
       "firstName": "Andrea",
       "lastName": "Aldana",
       "email": "andrealdanapaz@gmail.com",
       "avatarUrl": "",
-      "jobTitle": "Jr Developer",
+      "jobTitle": "Junior Developer",
       "twitter": "AndreaAldana",
-      "id": "ajCqHdo"
+      "id": "Fmoxqjr"
     }
   ]
 }
