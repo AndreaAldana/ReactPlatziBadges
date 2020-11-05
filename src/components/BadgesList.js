@@ -39,7 +39,7 @@ function BadgesList(props) {
         </div>
     }
 
-    const badgesList = badges.reverse();
+    const badgesList = filteredBadges.reverse();
     return <ul className="list-unstyled" >
         <div className="form-group">
             <label>Filter badges</label>
@@ -51,7 +51,7 @@ function BadgesList(props) {
         {/*   se recorre el arreglo */}
 
 
-        {filteredBadges.map((badge) => {
+        {badgesList.map((badge) => {
 
             return (
                 //Esto es para que las reconozca por id y tengan su key

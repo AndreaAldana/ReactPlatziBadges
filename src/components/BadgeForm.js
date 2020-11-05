@@ -121,7 +121,8 @@ class BadgeForm extends React.Component {
                     </input>
                 </div>
                 <div style={{ textAlign: "center" }}>
-                    <Button type="submit" className="form_button" onClick={this.handleClick} variant="outline-info">Submit</Button>
+                    <Button className="btn btn mr-1"
+                        style={{ backgroundColor: "#F4976C", color: "white" }} type="submit" onClick={this.handleClick} >Submit</Button>
                 </div>
 
                 {this.props.error && (

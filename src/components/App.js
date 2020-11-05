@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route, HashRouter } from 'react-router-dom'
 import Badges from '../pages/Badges'
 import BadgeNew from '../pages/BadgeNew'
 import Layout from './Layout'
@@ -13,7 +13,7 @@ import BadgeDetails from '../pages/BadgeDetailsContainer'
 //y que no se esté usando estado
 function App() {
 
-    return <BrowserRouter>
+    return <HashRouter basename="/React">
         <Layout>
             <Switch>
                 <Route exact path="/badges" component={Badges} />
@@ -32,7 +32,7 @@ function App() {
             </Switch>
         </Layout>
 
-    </BrowserRouter>
+    </HashRouter>
 
 }
 
